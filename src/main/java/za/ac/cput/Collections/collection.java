@@ -18,23 +18,30 @@ public class collection {
 
 
                 //List
+                String a,b;
                 LinkedList<String> student = new LinkedList<String>();
+                student.add("Jon");
+                student.add("Rob");
+                student.add("Stanley");
+                student.add("Coby");
+
                 Scanner sc = new Scanner(System.in);
 
-                String a,b;
 
-                a = sc.nextLine();
-                b = sc.nextLine();
+
+
+
 
 
                 System.out.println(student);
                 System.out.println("Add name");
-                student.add(a);
+                student.add(a = sc.nextLine());
                 System.out.println(student);
                 System.out.println("Remove name");
-                student.remove(b);
+                student.remove(b = sc.nextLine());
                 System.out.println(student);
-                System.out.println("Find name");
+                System.out.println("Find name Jon");
+                student.get(0);
 
 
 
@@ -44,19 +51,20 @@ public class collection {
                 int one;
 
                 Set<Integer> set = new HashSet<Integer>();
-
-                one = sc.nextInt();
-                b = sc.nextLine();
+                set.add(34);
+                set.add(3);
+                set.add(9);
 
 
                 System.out.println(set);
                 System.out.println("Add Number");
                 set.add(one = sc.nextInt());
                 System.out.println(set);
-                System.out.println("Remove name");
+                System.out.println("Remove number");
                 set.remove(one = sc.nextInt());
                 System.out.println(set);
-                System.out.println("Find name");
+                System.out.println("Find number");
+                set.size();
 
 
 
@@ -67,18 +75,18 @@ public class collection {
                 String x,y;
 
                 HashMap<String, String> cities = new HashMap<String, String>();
-
-                x = sc.nextLine();
-                y = sc.nextLine();
+                cities.put("Australia","Sydney");
+                cities.put("USA","Chicago");
+                cities.put("USA","Texas");
 
                 System.out.println("Insert Country and City");
                 cities.put(x = sc.nextLine(),y = sc.nextLine());
                 System.out.println(cities);
                 System.out.println("Remove Country and City");
-                cities.remove(x = sc.nextLine());
+                cities.remove(x = sc.nextLine(),y = sc.nextLine());
                 System.out.println(cities);
                 System.out.println("Find Country and City");
-                cities.get(x = sc.nextLine());
+                System.out.println(cities.get(x = sc.nextLine()));
 
 
 
